@@ -1,0 +1,243 @@
+* {
+    margin: 0;
+    box-sizing: border-box;
+    gap: 0;
+    padding: 0;
+}
+
+:root {
+    --primary-color: #ffd230;
+    --secundary-color: #f5f5f5;
+    --dark-color: #1e1e1e;
+    --font-size-title: 2.2rem;
+    --font-size-subtitle: 1.8rem;
+    --font-size: 1.5rem;
+    --font-size2: 1.2rem;
+    --font-size3: 1rem;
+    --font-size4: 0.8rem;
+    --font-size4: 0.6rem;
+    --transition: all 0.3s ease;
+    --border: 10px;
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    background: var(--secundary-color);
+    width: 100vw;
+    height: 100vh;
+}
+
+#ctn-btn-add button {
+    position: fixed;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 50px;
+    height: 50px;
+    right: 15px;
+    bottom: 100px;
+    border: none;
+    border-radius: 50%;
+    background: var(--primary-color);
+    box-shadow: 0px 0px 10px 2px #00000065;
+}
+
+#nav {
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+}
+
+nav {
+    display: flex;
+    justify-content: center;
+    padding: 10px 15px 20px 15px;
+    background: var(--dark-color);
+    box-shadow: 0px 0px 10px 2px #00000065;
+}
+
+nav ul {
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+    list-style: none;
+}
+
+nav ul li a {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-decoration: none;
+    width: 55px;
+    padding: 5px;
+    gap: 5px;
+    font-size: var(--font-size4);
+    color: #a8a8a8;
+}
+
+nav ul li .active {
+    color: var(--secundary-color);
+}
+
+nav ul li span a {
+    margin-top: -30px;
+    display: flex;
+    width: 70px;
+    height: 70px;
+    border: 4px solid var(--dark-color);
+    border-radius: 50%;
+    color: var(--secundary-color);
+    background: red;
+    box-shadow: 0px 0px 10px 2px #00000065;
+}
+
+ion-icon {
+    font-size: var(--font-size);
+}
+
+#header {
+    overflow: hidden;
+}
+
+
+#ctn-banner {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin-top: 30px;
+}
+
+.carousel {
+    position: relative;
+    overflow: hidden;
+    width: 300px;
+    border-radius: var(--border);
+    transition: var(--transition);
+    cursor: pointer;
+}
+
+.carousel:hover {
+    transform: scale(1.02);
+}
+
+.carousel-ctn {
+    display: flex;
+    transition: var(--transition);
+}
+
+.carousel-slide {
+    position: relative;
+    display: flex;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+}
+
+.banner {
+    display: flex;
+}
+
+.banner .img-banner img {
+    display: flex;
+    width: 300px;
+}
+
+.carousel-dots {
+    display: flex;
+    margin-top: 10px;
+    gap: 10px;
+    justify-content: center;
+}
+
+.dot {
+    width: 7px;
+    height: 7px;
+    border-radius: 50%;
+    background-color: var(--dark-color);
+    cursor: pointer;
+}
+
+.dot.active {
+    background-color: red;
+}
+
+/* style-profile */
+#ctn-profile {
+    margin-top: 30px;
+    display: flex;
+    flex-direction: column;
+}
+
+#ctn-user-name {
+    display: flex;
+    margin-left: 30px;
+}
+
+#ctn-user-name h1 {
+    font-size: var(--font-size2);
+    font-weight: 700;
+}
+
+#profile {
+    display: flex;
+    flex-direction: column;
+    padding: 20px 30px 190px 30px;
+}
+
+#header-profile {
+    display: flex;
+    justify-content: space-between;
+}
+
+#ctn-img-profile img {
+    display: flex;
+    width: 70px;
+    border-radius: 50%;
+}
+
+#ctn-following-followers {
+    margin-top: 10px;
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    gap: 30px;
+}
+
+#followers h1 {
+    font-size: var(--font-size2);
+    font-weight: 300;
+}
+
+#followers h2 {
+    font-size: var(--font-size4);
+    font-weight: 300;
+}
+
+#following h1 {
+    font-size: var(--font-size2);
+    font-weight: 300;
+}
+
+#following h2 {
+    font-size: var(--font-size4);
+    font-weight: 300;
+}
+
+#ctn-img-my-team img {
+    display: flex;
+    width: 40px;
+}
+
+#ctn-bio {
+    margin-top: 15px;
+    display: flex;
+    flex-direction: column;
+    width: 50%;
+}
+
+#ctn-bio #user {
+    font-size: var(--font-size3);
+    font-weight: 600;
+}
