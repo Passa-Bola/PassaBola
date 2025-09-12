@@ -1,0 +1,44 @@
+header{
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+}
+
+.profile{
+    display: flex;
+    align-items: center;
+}
+
+.info-profile{
+    margin-left: 10px;
+    display: flex;
+    flex-direction: column;
+    gap: 2px;
+}
+
+.info-profile h1{
+    color: var(--light-color);
+    font-size: 1.2rem;
+}
+
+.info-profile p{
+    color: #a8a8a8;
+}
+
+
+.profile img{
+    display: flex;
+    width: 60px;
+    border-radius: 50%;
+}
+
+header i{
+    margin-top: 10px;
+    display: flex;
+    height: fit-content;
+    align-items: end;
+    justify-content: end;
+    font-size: 1.3rem;
+    cursor: pointer;
+    color: var(--light-color);
+}

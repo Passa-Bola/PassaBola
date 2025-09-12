@@ -7,6 +7,7 @@ import TeamPage from './pages/Team.jsx'
 import PassaBolaPage from './pages/PassaBola.jsx'
 import ToPlayPage from './pages/ToPlay.jsx'
 import ProfilePage from './pages/Profile.jsx'
+import Notifications from './pages/Notifications.jsx';
 
 import NavBar from './components/NavBAr.jsx'
 
@@ -21,6 +22,7 @@ function App() {
         <Route path="/PassaBola" element={<PassaBolaPage />} />
         <Route path="/ToPlay" element={<ToPlayPage />} />
         <Route path="/Profile" element={<ProfilePage />} />
+        <Route path="/Notifications" element={<Notifications />} />
       </Routes>
       <NavBar />
     </>

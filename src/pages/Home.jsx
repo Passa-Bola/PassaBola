@@ -1,11 +1,15 @@
+import Header from '../components/Header'
+import Search from '../components/Search'
 import '../css/style.css'
 
 
 function Home() {
   return (
-    <div>
+    <section className='home'>
+      <Header />
+      <Search />
       <h1>Home</h1>
-    </div>
+    </section>
   )
 }
 
