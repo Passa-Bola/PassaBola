@@ -9,7 +9,7 @@ import ToPlayPage from './pages/ToPlay.jsx'
 import ProfilePage from './pages/Profile.jsx'
 import Notifications from './pages/Notifications.jsx';
 
-import NavBar from './components/NavBAr.jsx'
+import NavBar from './components/NavBar.jsx'
 
 
 function App() {
