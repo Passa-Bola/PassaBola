@@ -1,12 +1,12 @@
 import { Routes, Route } from 'react-router-dom';
 
-import './css/style.css'
+import './css/style.css';
 
-import HomePage from './pages/Home.jsx'
-import TeamPage from './pages/Team.jsx'
-import PassaBolaPage from './pages/PassaBola.jsx'
-import ToPlayPage from './pages/ToPlay.jsx'
-import ProfilePage from './pages/Profile.jsx'
+import HomePage from './pages/Home.jsx';
+import TeamPage from './pages/Team.jsx';
+import PassaBolaPage from './pages/PassaBola.jsx';
+import ToPlayPage from './pages/ToPlay.jsx';
+import ProfilePage from './pages/Profile.jsx';
 import Notifications from './pages/Notifications.jsx';
 
 import NavBar from './components/NavBar.jsx';
