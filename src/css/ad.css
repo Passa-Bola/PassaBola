@@ -2,7 +2,7 @@
     margin: 25px auto;
     display: flex;
     position: relative;
-    width: 95%;
+    width: 100%;
     height: 120px;
     overflow: hidden;
     border-radius: var(--border);
