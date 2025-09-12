@@ -1,9 +1,11 @@
 import React from 'react'
+import NavBar from '../components/NavBar'
 
 function PassaBola() {
   return (
     <div>
       <h1>PassaBola</h1>
+      <NavBar />
     </div>
   )
 }
