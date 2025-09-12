@@ -1,5 +1,7 @@
 import Ad from '../components/Ad'
 import Header from '../components/Header'
+import NewsFeed from '../components/NewsFeed'
+import Players from '../components/Players'
 import Search from '../components/Search'
 import '../css/style.css'
 
@@ -8,9 +10,12 @@ function Home() {
   return (
     <section className='home'>
       <Header />
-      <Search />
-      <Ad />
-      <h1>Home</h1>
+      <div className="content">
+        <Search />
+        <Ad />
+        <NewsFeed />
+        <Players />
+      </div>
     </section>
   )
 }

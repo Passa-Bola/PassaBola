@@ -1,7 +1,22 @@
 header{
+    position: fixed;
+    display: flex;
+    width: 100%;
+    flex-direction: column;
+    padding: 15px 15px 0px 15px;
+    z-index: 50;
+}
+
+.header{
     display: flex;
     width: 100%;
     justify-content: space-between;
+    padding: 20px;
+    background: #1e1e1e65;
+    backdrop-filter: blur(7px);
+    border: 1px solid var(--color-line);
+    border-radius: var(--border);
+    box-shadow: 0px 0px 20px 2px #00000084;
 }
 
 .profile{
@@ -13,7 +28,7 @@ header{
     margin-left: 10px;
     display: flex;
     flex-direction: column;
-    gap: 2px;
+    gap: 6px;
 }
 
 .info-profile h1{

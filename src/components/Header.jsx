@@ -5,6 +5,7 @@ import '../css/header.css'
 function Header() {
   return (
     <header>
+      <section className="header">
       <Link to="/Profile">
         <article className='profile'>
             <img src="https://marketplace.canva.com/Dz63E/MAF4KJDz63E/1/tl/canva-user-icon-MAF4KJDz63E.png"/>
@@ -15,6 +16,7 @@ function Header() {
         </article>
       </Link>
       <Link to="/Notifications"><i className='fa-solid fa-bell'></i></Link>
+      </section>
     </header>
   )
 }
