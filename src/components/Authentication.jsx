@@ -26,7 +26,7 @@ function Authentication() {
             </article>
             <a>Esqueceu a senha?</a>
         </section>
-        <Link to='/Home'><button>Entrar</button></Link>
+        <button><Link to='/Home'>Entrar</Link></button>
         <p>Não tem uma conta? <a>Criar</a></p>
     </section>
   )
