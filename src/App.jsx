@@ -8,6 +8,7 @@ import PassaBolaPage from './pages/PassaBola.jsx';
 import ToPlayPage from './pages/ToPlay.jsx';
 import ProfilePage from './pages/Profile.jsx';
 import Notifications from './pages/Notifications.jsx';
+import Login from './pages/Login.jsx';
 
 import NavBar from './components/NavBAr.jsx';
 
@@ -17,6 +18,7 @@ function App() {
   return (
     <>
       <Routes>
+        <Route path="/" element={<Login />} />
         <Route path="/Home" element={<HomePage />} />
         <Route path="/Team" element={<TeamPage />} />
         <Route path="/PassaBola" element={<PassaBolaPage />} />
@@ -24,7 +26,6 @@ function App() {
         <Route path="/Profile" element={<ProfilePage />} />
         <Route path="/Notifications" element={<Notifications />} />
       </Routes>
-      <NavBar />
     </>
   )
 }
