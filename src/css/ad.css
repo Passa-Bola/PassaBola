@@ -1,5 +1,5 @@
 .ctn-ad{
-    margin: 25px auto;
+    margin: 0px auto;
     display: flex;
     position: relative;
     width: 100%;
@@ -15,7 +15,7 @@
 }
 
 .ad-dots {
-    margin-top: -10px;
+    margin-top: 10px;
     width: 100%;
     text-align: center;
 }
