@@ -74,7 +74,7 @@ body{
 }
 
 .welcome{
-    margin-top: -30px;
+    margin-top: -80px;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -82,7 +82,20 @@ body{
     width: 100%;
 }
 
+.logo{
+    display: flex;
+    align-items: center;
+    gap: 5px;
+    color: #000;
+}
+
+.logo img{
+    display: flex;
+    width: 30px;
+}
+
 .welcome h1{
+    margin-top: 20px;
     display: flex;
     font-size: 2.5rem;
     gap: 10px;
@@ -96,7 +109,7 @@ body{
 
 .welcome h2{
     margin-top: 10px;
-    font-size: 1.5rem;
+    font-size: 1.3rem;
     font-weight: 500;
     color: #000;
 }
