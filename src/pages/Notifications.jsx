@@ -1,10 +1,12 @@
+import Header from "../components/Header"
 import NavBar from "../components/NavBAr"
 
 function Notifications()  {
   return (
-    <div>
+    <section className='ctn-notifications'>
+      <Header />
       <NavBar />
-    </div>
+    </section>
   )
 }
 

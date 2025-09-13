@@ -1,10 +1,12 @@
+import Header from '../components/Header'
 import NavBar from '../components/NavBAr'
 
 function ToPlay() {
   return (
-    <div>
+    <section className='ctn-toplay'>
+      <Header />
       <NavBar />
-    </div>
+    </section>
   )
 }
 

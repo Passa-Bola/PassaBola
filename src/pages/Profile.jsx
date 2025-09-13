@@ -1,11 +1,10 @@
-import React from 'react'
 import NavBar from '../components/NavBAr'
 
 function Profile() {
   return (
-    <div>
+    <section className='ctn-profile'>
       <NavBar />
-    </div>
+    </section>
   )
 }
 
