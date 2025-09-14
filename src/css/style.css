@@ -167,6 +167,7 @@ body{
     margin-top: -40px;
     display: flex;
     width: 100px;
+    height: 100px;
     border: 6px solid #000;
     border-radius: 50%;
     box-shadow: 0px 0px 10px 2px #000000a2;
@@ -233,6 +234,119 @@ body{
     width: 100vw;
     overflow: hidden;
 }
+
+/* style page PassaBola */
+.ctn-channel{
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+    width: 100vw;
+    overflow: hidden;
+}
+
+.about h1{
+    font-size: 1.2rem;
+    font-weight: 600;
+}
+
+.about h2{
+    text-align: justify;
+    margin-top: 10px;
+    font-size: 1rem;
+    font-weight: 500;
+    color: #dadada;
+}
+
+.channels{
+    margin-top: -10px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.channels h1{
+    margin-top: 35px;
+    font-size: 1.2rem;
+    font-weight: 600;
+}
+
+.ctn-info-channel{
+    margin-top: 5px;
+    display: flex;
+    flex-direction: column;
+    padding: 15px;
+    border: 1px solid var(--color-line);
+    border-radius: var(--border);
+}
+
+.ctn-info-channel h1 i{
+    color: #c80000;
+}
+
+.ctn-info-channel h1 i:last-child{
+    color: #ffffff;
+}
+
+.ctn-info-channel h1{
+    font-size: 1.2rem;
+    margin-top: 0px;
+}
+
+.ctn-info-channel span{
+    color: #c80000;
+}
+
+.channel{
+    display: flex;
+    gap: 15px;
+}
+
+.channel img{
+    margin-top: 15px;
+    display: flex;
+    width: 90px;
+    height: 90px;
+    border-radius: 50%;
+}
+
+.info-channel{
+    margin-top: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: end;
+}
+
+.info-channel h1{
+    text-align: left;
+    width: 100%;
+    font-size: 1rem;
+}
+
+.info-channel h2{
+    text-align: justify;
+    margin-top: 10px;
+    font-size: 0.9rem;
+    font-weight: 500;
+    color: #b4b4b4;
+}
+
+.info-channel a{
+    margin-top: 15px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: fit-content;
+    padding: 7px 15px;
+    border: 1px solid var(--color-line);
+    border-radius: 5px;
+    color: #fff;
+    transition: var(--transition);
+}
+
+.info-channel a:hover{
+    background: #1e1e1e;
+}
+
 
 
 /* style page myteam */
