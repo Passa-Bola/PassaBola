@@ -1,0 +1,113 @@
+.my-team{
+    margin-top: 25px;
+    display: flex;
+    gap: 15px;
+}
+
+.my-team img{
+    display: flex;
+    width: 80px;
+    height: fit-content;
+}
+
+.info-my-team{
+    display: flex;
+    flex-direction: column;
+    gap: 3px;
+}
+
+.info-my-team h1{
+    font-size: 1.3rem;
+    font-weight: 600;
+}
+
+.info-my-team h2{
+    font-size: 0.9rem;
+    font-weight: 600;
+    color: #9f9f9f;
+}
+
+.ctn-next-match{
+    margin-top: 30px;
+    display: flex;
+    flex-direction: column;
+}
+
+.ctn-next-match h1{
+    font-size: 1.2rem;
+}
+
+.next-match{
+    margin-top: 15px;
+    display: flex;
+    flex-direction: column;
+    border: 1px solid var(--color-line);
+    border-radius: var(--border);
+    padding: 15px;
+}
+
+.ctn-match{
+    margin-top: 35px;
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+    gap: 10px;
+}
+
+.team{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: end;
+}
+
+.team img{
+    display: flex;
+    width: 60px;
+    height: fit-content;
+}
+
+.team h1{
+    font-size: 1.2rem;
+}
+
+.info-match{
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: end;
+    gap: 15px;
+}
+
+.info-match i{
+    font-size: 1.2rem;
+}
+
+.info-match p{
+    font-size: 0.9rem;
+    color: #9f9f9f;
+}
+
+.go-to-match{
+    margin-top: 15px;
+    display: flex;
+    gap: 20px;
+}
+
+.go-to-match a{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 7px 15px;
+    border: 1px solid var(--color-line);
+    border-radius: var(--border);
+    cursor: pointer;
+    transition: var(--transition);
+    color: var(--light-color);
+    gap: 5px;
+}
+
+.go-to-match a:hover{
+    background: #1c1c1c;
+}

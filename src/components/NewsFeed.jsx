@@ -27,6 +27,36 @@ function NewsFeed() {
                     </div>
                 </div>
             </article>
+
+            <article className='news'>
+                <img src="https://azmina.com.br/wp-content/uploads/2017/01/marta_selecao.jpg"/>
+                <div className="info-news">
+                    <h1>Marta convocada para a Copa América!</h1>
+                    <div className="date-card">
+                        <p>12/09/2025</p>
+                    </div>
+                </div>
+            </article>
+
+            <article className='news'>
+                <img src="https://azmina.com.br/wp-content/uploads/2017/01/marta_selecao.jpg"/>
+                <div className="info-news">
+                    <h1>Marta convocada para a Copa América!</h1>
+                    <div className="date-card">
+                        <p>12/09/2025</p>
+                    </div>
+                </div>
+            </article>
+
+            <article className='news'>
+                <img src="https://azmina.com.br/wp-content/uploads/2017/01/marta_selecao.jpg"/>
+                <div className="info-news">
+                    <h1>Marta convocada para a Copa América!</h1>
+                    <div className="date-card">
+                        <p>12/09/2025</p>
+                    </div>
+                </div>
+            </article>
         </div>
     </section>
   )

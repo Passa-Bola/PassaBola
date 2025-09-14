@@ -10,7 +10,7 @@ function Login() {
                 <img src={logo} />
                 <h3>PassaBola</h3>
             </div>
-            <h1><span>Seja</span>Bem Vinda!</h1>
+            <h1><span>Seja</span>Bem-Vinda!</h1>
             <h2>Sua paixão pelo futebol feminino merece <span>destaque.</span></h2>
         </article>
         <Authentication />

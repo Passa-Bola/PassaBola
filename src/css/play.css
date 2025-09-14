@@ -20,7 +20,7 @@
     padding: 20px;
     border: 1px solid var(--color-line);
     border-radius: var(--border);
-    gap: 20px;
+    gap: 15px;
     transition: var(--transition);
 }
 

@@ -60,6 +60,14 @@
 
 .ctn-news{
     display: flex;
+    width: 100%;
+    overflow-x: scroll;
+    gap: 20px;
+}
+
+.ctn-news::-webkit-scrollbar{
+    display: flex;
+    height: 0px;
 }
 
 .news{
