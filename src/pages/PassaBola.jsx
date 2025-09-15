@@ -1,5 +1,6 @@
 import NavBar from '../components/NavBAr'
 import Header from '../components/Header'
+import Ad from '../components/Ad'
 import '../css/style.css'
 
 function PassaBola() {
@@ -7,6 +8,7 @@ function PassaBola() {
     <section className='ctn-channel'>
       <Header />
       <div className="content">
+        <Ad />
         <section className='about'>
           <h1>Sobre</h1>
           <h2>O Passa a Bola é uma comunidade dedicada a fortalecer o futebol feminino dentro e fora de campo.
@@ -27,7 +29,7 @@ function PassaBola() {
               <div className="info-channel">
                 <h1>@passabola</h1>
                 <h2>Agora o Passa Bola tem um podcast, ou melhor, um PABCAST, o Fala, Bebê. Aqui, nosso bate papo vai ser sobre o universo do futebol mas para além das quatro linhas. Vamos falar sobre diversidade, cultura, moda, entretenimento e várias outras coisas legais. Vem ouvir/assistir e entrar nas discussões com a gente.</h2>
-                <a href="https://www.youtube.com/@passabola">Ir para o canal</a>
+                <a href="https://www.youtube.com/@passabola" target='_blank'>Ir para o canal</a>
               </div>
             </div>
           </article>
@@ -41,7 +43,7 @@ function PassaBola() {
                   Aqui você encontra notícias, bastidores, entrevistas e jogos, além de conteúdo sobre diversidade, cultura e histórias inspiradoras.
                   Vem com a gente, comente, compartilhe e participe! ✨
                 </h2>
-                <a href="https://www.instagram.com/passaabola/">Ir para o perfil</a>
+                <a href="https://www.instagram.com/passaabola/" target='_blank'>Ir para o perfil</a>
               </div>
             </div>
           </article>

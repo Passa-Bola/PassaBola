@@ -21,9 +21,9 @@ function Profile() {
               <h2>@alexavier</h2>
             </div>
             <div className="social">
-              <a href="#"><i className='fa-brands fa-instagram'></i></a>
-              <a href="#"><i className='fa-brands fa-linkedin'></i></a>
-              <a href="#"><i className='fa-brands fa-youtube'></i></a>
+              <a href="https://www.instagram.com/alexavier/" target='_blank'><i className='fa-brands fa-instagram'></i></a>
+              <a href="https://x.com/alegxavier" target='_blank'><i className='fa-brands fa-twitter'></i></a>
+              <a href="https://www.youtube.com/@passabola" target='_blank'><i className='fa-brands fa-youtube'></i></a>
             </div>
           </div>
           <div className="bio">

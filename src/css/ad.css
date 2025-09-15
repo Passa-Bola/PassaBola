@@ -3,13 +3,20 @@
     display: flex;
     position: relative;
     width: 100%;
-    height: 120px;
+    overflow: hidden;
+}
+
+.ad-image{
+    display: flex;
+    width: 100%;
+    height: 130px;
     overflow: hidden;
     border-radius: var(--border);
 }
 
 .ad-image img {
     width: 100%;
+    height: max-content;
     object-fit: cover;
     transition: var(--transition);
 }
