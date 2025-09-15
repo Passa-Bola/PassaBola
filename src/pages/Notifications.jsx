@@ -1,6 +1,7 @@
 import Header from "../components/Header"
 import NavBar from "../components/NavBAr"
 import NotificationsCard from "../components/NotificationsCard"
+import '../css/style.css'
 
 function Notifications()  {
   return (

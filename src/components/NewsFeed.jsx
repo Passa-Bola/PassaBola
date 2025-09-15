@@ -1,65 +1,68 @@
-import '../css/newsfeed.css'
+import '../css/newsfeed.css';
+import { useEffect, useState } from 'react';
 
 function NewsFeed() {
-  return (
-    <section className='feed'>
-        <h1>Destaque da semana</h1>
-        <div className="featured-news">
-            <article className='ctn-featured-news'>
-                <img src="https://azmina.com.br/wp-content/uploads/2017/01/marta_selecao.jpg"/>
-                <div className="info-featured-news">
-                    <h1>Marta convocada para a Copa América!</h1>
-                    <h2>Marta foi convocada pelo técnico da Seleção Brasileira feminina, Arthur Elias, para disputar a Copa América deste ano, no Equador</h2>
-                    <div className="date-card">
-                        <p>12/09/2025</p>
-                    </div>
-                </div>
-            </article>
-        </div>
-        <h1>Notícias</h1>
-        <div className="ctn-news">
-            <article className='news'>
-                <img src="https://azmina.com.br/wp-content/uploads/2017/01/marta_selecao.jpg"/>
-                <div className="info-news">
-                    <h1>Marta convocada para a Copa América!</h1>
-                    <div className="date-card">
-                        <p>12/09/2025</p>
-                    </div>
-                </div>
-            </article>
+    const [featured, setFeatured] = useState(null);
+    const [news, setNews] = useState([]);
 
-            <article className='news'>
-                <img src="https://azmina.com.br/wp-content/uploads/2017/01/marta_selecao.jpg"/>
-                <div className="info-news">
-                    <h1>Marta convocada para a Copa América!</h1>
-                    <div className="date-card">
-                        <p>12/09/2025</p>
-                    </div>
-                </div>
-            </article>
+    useEffect(() => {
+        async function fetchNews() {
+            try {
+                const response = await fetch('/api/news');
+                const data = await response.json();
 
-            <article className='news'>
-                <img src="https://azmina.com.br/wp-content/uploads/2017/01/marta_selecao.jpg"/>
-                <div className="info-news">
-                    <h1>Marta convocada para a Copa América!</h1>
-                    <div className="date-card">
-                        <p>12/09/2025</p>
-                    </div>
-                </div>
-            </article>
+                if (data.length > 0) {
+                    setFeatured(data[1]);
+                    setNews(data.slice(1, 20));
+                }
+            } catch (err) {
+                console.error('Erro ao buscar notícias:', err);
+            }
+        }
+        fetchNews();
+    }, []);
 
-            <article className='news'>
-                <img src="https://azmina.com.br/wp-content/uploads/2017/01/marta_selecao.jpg"/>
-                <div className="info-news">
-                    <h1>Marta convocada para a Copa América!</h1>
-                    <div className="date-card">
-                        <p>12/09/2025</p>
+
+    return (
+        <section className='feed'>
+            {featured && (
+                <>
+                    <h1>Destaque da semana</h1>
+                    <div className="featured-news">
+                        <article className='ctn-featured-news'>
+                            <img src={featured.imageUrl} alt={featured.title} />
+                            <div className="info-featured-news">
+                                <h1>{featured.title}</h1>
+                                <h2>{featured.description}</h2>
+                                <div className="date-card">
+                                    <p>{new Date(featured.publishedAt).toLocaleDateString()}</p>
+                                </div>
+                            </div>
+                        </article>
                     </div>
-                </div>
-            </article>
-        </div>
-    </section>
-  )
+                </>
+            )}
+
+            {news.length > 0 && (
+                <>
+                    <h1>Notícias</h1>
+                    <div className="ctn-news">
+                        {news.map((article, index) => (
+                            <article className='news' key={index}>
+                                <img src={article.imageUrl} alt={article.title} />
+                                <div className="info-news">
+                                    <h1>{article.title}</h1>
+                                    <div className="date-card">
+                                        <p>{new Date(article.publishedAt).toLocaleDateString()}</p>
+                                    </div>
+                                </div>
+                            </article>
+                        ))}
+                    </div>
+                </>
+            )}
+        </section>
+    );
 }
 
-export default NewsFeed
+export default NewsFeed;

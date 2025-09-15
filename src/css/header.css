@@ -58,3 +58,14 @@ header i{
     cursor: pointer;
     color: var(--light-color);
 }
+
+/* resposividade */
+@media(width > 780px) {
+
+    header{
+        left: 15px;
+        display: flex;
+        width: 25%;
+    }
+
+}

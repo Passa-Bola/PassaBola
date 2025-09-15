@@ -10,9 +10,6 @@ import ProfilePage from './pages/Profile.jsx';
 import Notifications from './pages/Notifications.jsx';
 import Login from './pages/Login.jsx';
 
-import NavBar from './components/NavBAr.jsx';
-
-
 function App() {
 
   return (

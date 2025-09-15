@@ -1,6 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
 
-*{
+* {
     margin: 0;
     box-sizing: border-box;
     gap: 0;
@@ -8,7 +8,7 @@
     text-decoration: none;
 }
 
-:root{
+:root {
     --primary-color: #ed4f9b;
     --secundary-color: #000;
     --dark-color: #1e1e1e;
@@ -18,7 +18,7 @@
     --border: 10px;
 }
 
-body{
+body {
     font-family: "Inter";
     display: flex;
     flex-direction: column;
@@ -29,21 +29,21 @@ body{
     color: var(--light-color);
 }
 
-.content::-webkit-scrollbar{
+.content::-webkit-scrollbar {
     display: flex;
     width: 4px;
 }
 
-.content::-webkit-scrollbar-thumb{
+.content::-webkit-scrollbar-thumb {
     background: #1e1e1e;
     cursor: pointer;
 }
 
-.content::-webkit-scrollbar-track{
+.content::-webkit-scrollbar-track {
     background: #000;
 }
 
-.content{
+.content {
     display: flex;
     flex-direction: column;
     overflow-y: scroll;
@@ -51,8 +51,22 @@ body{
     padding: 120px 15px 185px 15px;
 }
 
+.content-profile::-webkit-scrollbar {
+    display: flex;
+    width: 4px;
+}
+
+.content-profile::-webkit-scrollbar-thumb {
+    background: #1e1e1e;
+    cursor: pointer;
+}
+
+.content-profile::-webkit-scrollbar-track {
+    background: #000;
+}
+
 /* style page home */
-.home{
+.home {
     display: flex;
     flex-direction: column;
     width: 100%;
@@ -63,7 +77,7 @@ body{
 
 
 /* style login */
-.ctn-login{
+.ctn-login {
     display: flex;
     flex-direction: column;
     padding: 20px;
@@ -73,7 +87,7 @@ body{
     background-size: cover;
 }
 
-.welcome{
+.welcome {
     margin-top: -65px;
     display: flex;
     flex-direction: column;
@@ -82,19 +96,19 @@ body{
     width: 100%;
 }
 
-.logo{
+.logo {
     display: flex;
     align-items: center;
     gap: 5px;
     color: #000;
 }
 
-.logo img{
+.logo img {
     display: flex;
     width: 30px;
 }
 
-.welcome h1{
+.welcome h1 {
     margin-top: 20px;
     display: flex;
     font-size: 2.5rem;
@@ -102,26 +116,26 @@ body{
     color: #000;
 }
 
-.welcome h1 span{
+.welcome h1 span {
     color: var(--primary-color);
     text-decoration: underline;
 }
 
-.welcome h2{
+.welcome h2 {
     margin-top: 10px;
     font-size: 1.3rem;
     font-weight: 500;
     color: #000;
 }
 
-.welcome h2 span{
+.welcome h2 span {
     color: var(--primary-color);
     font-weight: 600;
 }
 
 
 /* style page profile */
-.ctn-profile{
+.ctn-profile {
     display: flex;
     flex-direction: column;
     height: 100vh;
@@ -129,14 +143,18 @@ body{
     overflow: hidden;
 }
 
-.content-profile{
+.ctn-header {
+    display: none;
+}
+
+.content-profile {
     display: flex;
     flex-direction: column;
     overflow-y: scroll;
     padding: 0px 0px 185px 0px;
 }
 
-.sec-profile{
+.sec-profile {
     display: flex;
     flex-direction: column;
     align-items: start;
@@ -145,25 +163,25 @@ body{
     box-shadow: 0px 1px 0px 0px var(--color-line);
 }
 
-.banner img{
+.banner img {
     display: flex;
     width: 100%;
     border-radius: 0;
 }
 
-.ctn-user{
+.ctn-user {
     display: flex;
     justify-content: space-between;
     width: 100%;
 }
 
-.user{
+.user {
     display: flex;
     flex-direction: column;
     margin-left: 15px;
 }
 
-.user img{
+.user img {
     margin-top: -40px;
     display: flex;
     width: 100px;
@@ -173,61 +191,87 @@ body{
     box-shadow: 0px 0px 10px 2px #000000a2;
 }
 
-.user h1{
+.user h1 {
     margin-top: 10px;
     font-size: 1.2rem;
 }
 
-.user h2{
+.user h2 {
     margin-top: 3px;
     font-size: 0.9rem;
     font-weight: 500;
     color: #ffffffb3;
 }
 
-.social{
+.social {
     margin: 15px 20px;
     display: flex;
     gap: 6px;
 }
 
-.social a{
+.social a {
     font-size: 1.3rem;
     color: #f5f5f5;
 }
 
-.bio{
+.bio {
     margin-top: 15px;
     margin-left: 15px;
     display: flex;
     width: 65%;
 }
 
-.bio p{
+.bio p {
     font-size: 1rem;
 }
 
-.followers-following{
+.followers-following {
     margin-top: 15px;
     margin-left: 15px;
     display: flex;
     gap: 15px;
 }
 
-.followers-following h1{
+.followers-following h1 {
     font-size: 1.1rem;
 }
 
-.feed-profile{
+.feed-profile {
     display: flex;
     flex-wrap: wrap;
     padding: 15px;
-    gap: 7px;
+    gap: 15px;
 }
 
+.post-feed {
+    display: flex;
+    flex-direction: column;
+    padding: 10px;
+    border: 1px solid var(--color-line);
+    border-radius: var(--border);
+}
+
+.post-feed img {
+    display: flex;
+    width: 100%;
+    border-radius: 5px;
+}
+
+.post-feed h1 {
+    margin-top: 15px;
+    font-size: 1rem;
+}
+
+.post-feed p {
+    text-align: end;
+    margin-top: 15px;
+    font-size: 0.8rem;
+    font-weight: 500;
+    color: #ababab;
+}
 
 /* style page toplay */
-.ctn-toplay{
+.ctn-toplay {
     display: flex;
     flex-direction: column;
     height: 100vh;
@@ -236,7 +280,7 @@ body{
 }
 
 /* style page PassaBola */
-.ctn-channel{
+.ctn-channel {
     display: flex;
     flex-direction: column;
     height: 100vh;
@@ -244,12 +288,12 @@ body{
     overflow: hidden;
 }
 
-.about h1{
+.about h1 {
     font-size: 1.2rem;
     font-weight: 600;
 }
 
-.about h2{
+.about h2 {
     text-align: justify;
     margin-top: 10px;
     font-size: 1rem;
@@ -257,20 +301,20 @@ body{
     color: #dadada;
 }
 
-.channels{
+.channels {
     margin-top: -10px;
     display: flex;
     flex-direction: column;
     gap: 10px;
 }
 
-.channels h1{
+.channels h1 {
     margin-top: 35px;
     font-size: 1.2rem;
     font-weight: 600;
 }
 
-.ctn-info-channel{
+.ctn-info-channel {
     margin-top: 5px;
     display: flex;
     flex-direction: column;
@@ -279,29 +323,29 @@ body{
     border-radius: var(--border);
 }
 
-.ctn-info-channel h1 i{
+.ctn-info-channel h1 i {
     color: #c80000;
 }
 
-.ctn-info-channel h1 i:last-child{
+.ctn-info-channel h1 i:last-child {
     color: #ffffff;
 }
 
-.ctn-info-channel h1{
+.ctn-info-channel h1 {
     font-size: 1.2rem;
     margin-top: 0px;
 }
 
-.ctn-info-channel span{
+.ctn-info-channel span {
     color: #c80000;
 }
 
-.channel{
+.channel {
     display: flex;
     gap: 15px;
 }
 
-.channel img{
+.channel img {
     margin-top: 15px;
     display: flex;
     width: 90px;
@@ -309,20 +353,20 @@ body{
     border-radius: 50%;
 }
 
-.info-channel{
+.info-channel {
     margin-top: 20px;
     display: flex;
     flex-direction: column;
     align-items: end;
 }
 
-.info-channel h1{
+.info-channel h1 {
     text-align: left;
     width: 100%;
     font-size: 1rem;
 }
 
-.info-channel h2{
+.info-channel h2 {
     text-align: justify;
     margin-top: 10px;
     font-size: 0.9rem;
@@ -330,7 +374,7 @@ body{
     color: #b4b4b4;
 }
 
-.info-channel a{
+.info-channel a {
     margin-top: 15px;
     display: flex;
     align-items: center;
@@ -343,17 +387,99 @@ body{
     transition: var(--transition);
 }
 
-.info-channel a:hover{
+.info-channel a:hover {
     background: #1e1e1e;
 }
 
 
 
 /* style page myteam */
-.ctn-team{
+.ctn-team {
     display: flex;
     flex-direction: column;
     height: 100vh;
     width: 100vw;
     overflow: hidden;
+}
+
+/* style page notification */
+.ctn-notifications{
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+    width: 100vw;
+    overflow: hidden;
+}
+
+
+/* resposividade geral */
+@media(width > 780px) {
+
+    /* responsividade tela login */
+    .ctn-login {
+        align-items: center;
+        justify-content: center;
+        background: #ffd230;
+    }
+
+    .welcome {
+        align-items: center;
+        margin-top: 0px;
+    }
+
+    .welcome h1 {
+        margin-top: 25px;
+    }
+
+    .logo {
+        display: flex;
+        align-items: center;
+        justify-content: start;
+        width: 100%;
+        gap: 5px;
+        color: #000;
+    }
+
+    .home {
+        align-items: center;
+    }
+
+    .ctn-team {
+        align-items: center;
+    }
+
+    .ctn-channel {
+        align-items: center;
+    }
+
+    .ctn-toplay {
+        align-items: center;
+    }
+
+    .ctn-profile {
+        align-items: center;
+    }
+
+    .content {
+        margin-left: 25px;
+        box-shadow: 0px 0px 0px 1px var(--color-line);
+        padding: 15px;
+        width: 50%;
+    }
+
+    .content-profile {
+        margin-left: 25px;
+        box-shadow: 0px 0px 0px 1px var(--color-line);
+        width: 50%;
+        padding: 0;
+    }
+
+    .ctn-header {
+        display: flex;
+    }
+
+    .ctn-notifications{
+        align-items: center;
+    }
+
 }
