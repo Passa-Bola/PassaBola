@@ -2,6 +2,7 @@ import { Routes, Route } from 'react-router-dom';
 
 import './css/style.css';
 
+import ChangeIcon from './hooks/ChangeIcon'
 import HomePage from './pages/Home.jsx';
 import TeamPage from './pages/Team.jsx';
 import PassaBolaPage from './pages/PassaBola.jsx';
@@ -11,6 +12,8 @@ import Notifications from './pages/Notifications.jsx';
 import Login from './pages/Login.jsx';
 
 function App() {
+
+  ChangeIcon();
 
   return (
     <>
