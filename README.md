@@ -5,6 +5,11 @@
 
 acesse: [passabola.com.br](https://passa-bola-seven.vercel.app/)
 
+# Login
+
+```LOGIN: alexavier```
+```SENHA: ale123```
+
 ## Sobre
 
 O **PassaBola** é um projeto web dedicado ao **futebol feminino**, atuando como um **centralizador de informações**.  
