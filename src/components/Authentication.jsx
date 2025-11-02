@@ -56,6 +56,7 @@ function Authentication() {
             <input
               type="text"
               placeholder="Nome de usuário"
+              autoFocus
               value={user}
               onChange={(e) => setUser(e.target.value)}
             />

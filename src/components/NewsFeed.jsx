@@ -59,6 +59,19 @@ function NewsFeed() {
                             </article>
                         ))}
                     </div>
+                    <div className="ctn-news-col">
+                        {news.map((article, index) => (
+                            <article className='news-col' key={index}>
+                                <img src={article.imageUrl} alt={article.title} />
+                                <div className="info-news-col">
+                                    <h1>{article.title}</h1>
+                                    <div className="date-card">
+                                        <p>{new Date(article.publishedAt).toLocaleDateString()}</p>
+                                    </div>
+                                </div>
+                            </article>
+                        ))}
+                    </div>
                 </>
             )}
         </section>

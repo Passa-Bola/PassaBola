@@ -13,11 +13,9 @@ function Home() {
       <Header />
       <div className="content">
         <Search />
-        <Ad />
         <NewsFeed />
-        <Players />
+        <NavBar />
       </div>
-      <NavBar />
     </section>
   )
 }
