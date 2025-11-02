@@ -1,8 +1,6 @@
-import Ad from '../components/Ad'
 import Header from '../components/Header'
 import NavBar from '../components/NavBAr'
 import NewsFeed from '../components/NewsFeed'
-import Players from '../components/Players'
 import Search from '../components/Search'
 import '../css/style.css'
 
