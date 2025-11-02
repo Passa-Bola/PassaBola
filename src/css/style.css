@@ -49,7 +49,7 @@ body {
     flex-direction: column;
     overflow-y: scroll;
     padding: 0px 0px 120px 0px;
-    padding: 110px 15px 185px 15px;
+    padding: 113px 15px 185px 15px;
 }
 
 .content-profile::-webkit-scrollbar {
