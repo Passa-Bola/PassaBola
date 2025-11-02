@@ -1,4 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
 
 * {
     margin: 0;
@@ -78,17 +79,19 @@ body {
 
 /* style login */
 .ctn-login {
+    font-family: "Montserrat";
     display: flex;
+    align-items: center;
+    justify-content: center;
     flex-direction: column;
     padding: 20px;
     height: 100vh;
-    background-image: url('../assets/img/fundo.png');
+    background-image: url('https://wallpapers.com/images/featured/light-color-s0s3phxvwu24nnza.jpg');
     background-repeat: no-repeat;
     background-size: cover;
 }
 
 .welcome {
-    margin-top: -65px;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -420,23 +423,36 @@ body {
 }
 
 
-/* resposividade geral */
 @media(width > 780px) {
 
-    /* responsividade tela login */
     .ctn-login {
         align-items: center;
         justify-content: center;
-        background: #ffd230;
+        background-image: url('https://wallpapers.com/images/featured/light-color-s0s3phxvwu24nnza.jpg');
+    }
+
+    .login{
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        width: 900px;
+        height: fit-content;
+        background: transparent;
+        backdrop-filter: blur(17px);
+        border: 1px solid #ffffff70;
+        border-radius: 20px;
+        box-shadow: -20px 20px 20px 0px #00000040;
     }
 
     .welcome {
+        padding: 20px;
+        margin: 0;
         align-items: center;
-        margin-top: 0px;
-    }
-
-    .welcome h1 {
-        margin-top: 25px;
+        justify-content: space-between;
+        width: 45%;
+        height: 100%;
+        background: #ffffff50;
+        border-radius: 20px 0px 0px 20px;
     }
 
     .logo {
@@ -446,6 +462,69 @@ body {
         width: 100%;
         gap: 5px;
         color: #000;
+        cursor: default;
+    }
+
+    .content-welcome{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        cursor: default;
+    }
+
+    .content-welcome h1 {
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+        margin: 0px;
+        gap: 0px;
+    }
+
+    .content-welcome h2{
+        font-size: 1rem;
+    }
+
+    .welcome button{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 200px;
+        height: 33px;
+        border: none;
+        border-radius: 50px;
+        background: #ffffff84;
+        backdrop-filter: blur(5px);
+        box-shadow: -3px 5px 15px 2px #00000035;
+        transition: var(--transition);
+        cursor: pointer;
+    }
+    
+    .welcome button:hover{
+        transform: scale(1.02);
+        background: #ffffffc9;
+    }
+
+    .links-social-welcome{
+        display: flex;
+        gap: 15px;
+    }
+
+    .links-social-welcome a{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        background: #ffffff74;
+        border-radius: 50%;
+        width: 30px;
+        height: 30px;
+        font-size: 1rem;
+        color: var(--primary-color);
+        transition: var(--transition);
+    }
+
+    .links-social-welcome a:hover{
+        transform: translateY(-5px);
+        background: #ffffffcb;
     }
 
     .home {

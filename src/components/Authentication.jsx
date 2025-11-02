@@ -42,7 +42,7 @@ function Authentication() {
       }
 
       navigate("/home");
-    } catch (err) {
+    } catch {
       setError("Erro de conexão com o servidor.");
     }
   };
@@ -50,12 +50,12 @@ function Authentication() {
   return (
     <section className="authentication">
       <form onSubmit={handleLogin}>
+        <h1>Faça Login</h1>
         <article className="ctn-input">
-          <label>Usuário:</label>
           <div className="input">
             <input
               type="text"
-              placeholder="Digite seu usuário"
+              placeholder="Nome de usuário"
               value={user}
               onChange={(e) => setUser(e.target.value)}
             />
@@ -64,11 +64,10 @@ function Authentication() {
         </article>
 
         <article className="ctn-input">
-          <label>Senha:</label>
           <div className="input">
             <input
               type={showPassword ? "text" : "password"}
-              placeholder="Entre com sua senha"
+              placeholder="**********"
               value={password}
               onChange={(e) => setPassword(e.target.value)}
             />
@@ -92,7 +91,7 @@ function Authentication() {
           <a>Esqueceu a senha?</a>
         </section>
 
-        {error && <p style={{ color: "red", position: 'absolute', textAlign: 'center', }}>{error}</p>}
+        {error && <p className="error-authentication">{error}</p>}
 
         <button type="submit">Entrar</button>
         <p>Não tem conta?<a> Criar!</a></p>
