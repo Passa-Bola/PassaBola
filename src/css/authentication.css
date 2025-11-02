@@ -1,10 +1,18 @@
 .authentication {
     display: flex;
     flex-direction: column;
-    height: 100%;
     color: #000;
 }
 
+.authentication form h1 {
+    font-weight: 400;
+}
+
+.error-authentication {
+    position: absolute;
+    bottom: 115px;
+    color: red;
+}
 
 .ctn-input {
     margin-top: 20px;
@@ -74,7 +82,15 @@
     border: none;
     border-radius: var(--border);
     background: var(--primary-color);
+    font-size: 1.1rem;
     color: #fff;
+    transition: var(--transition);
+}
+
+.authentication button:active {
+    color: #000;
+    background: #ffffff;
+    box-shadow: 0px 0px 10px 2px #ffffff3f;
 }
 
 .authentication p {
@@ -97,6 +113,7 @@
         align-items: center;
         justify-content: center;
         width: 90%;
+        height: 100%;
         padding: 20px 20px 20px 20px;
         color: #000;
     }
@@ -156,7 +173,7 @@
     }
 
     .authentication button {
-        margin-top: 50px;
+        margin-top: 60px;
         width: 250px;
         height: 40px;
         border-radius: 50px;
@@ -167,17 +184,18 @@
     }
 
     .authentication button:hover {
+        color: #000;
         background: #ffffff;
         box-shadow: 0px 0px 10px 2px #ffffff3f;
     }
 
-    .authentication form p{
+    .authentication form p {
         font-size: 0.8rem;
     }
 
-    .error-authentication{
+    .error-authentication {
         display: flex;
-        bottom: 100px;
+        bottom: 105px;
         position: absolute;
         color: red;
     }

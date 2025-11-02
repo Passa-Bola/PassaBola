@@ -79,11 +79,9 @@ body {
 
 /* style login */
 .ctn-login {
-    font-family: "Montserrat";
     display: flex;
-    align-items: center;
-    justify-content: center;
-    flex-direction: column;
+    font-family: "Montserrat";
+    width: 100%;
     padding: 20px;
     height: 100vh;
     background-image: url('https://wallpapers.com/images/featured/light-color-s0s3phxvwu24nnza.jpg');
@@ -91,17 +89,26 @@ body {
     background-size: cover;
 }
 
+.login{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 100%;
+    height: 100%;
+}
+
 .welcome {
     display: flex;
     flex-direction: column;
-    justify-content: center;
-    height: 100%;
+    align-items: center;
     width: 100%;
+    height: 100%;
 }
 
 .logo {
     display: flex;
     align-items: center;
+    justify-content: center;
     gap: 5px;
     color: #000;
 }
@@ -112,9 +119,11 @@ body {
 }
 
 .welcome h1 {
-    margin-top: 20px;
+    text-align: center;
     display: flex;
-    font-size: 2.5rem;
+    flex-direction: column;
+    margin-top: 60px;
+    font-size: 3rem;
     gap: 10px;
     color: #000;
 }
@@ -136,6 +145,13 @@ body {
     font-weight: 600;
 }
 
+.welcome button{
+    display: none;
+}
+
+.links-social-welcome{
+    display: none;
+}
 
 /* style page profile */
 .ctn-profile {
@@ -428,11 +444,12 @@ body {
     .ctn-login {
         align-items: center;
         justify-content: center;
-        background-image: url('https://wallpapers.com/images/featured/light-color-s0s3phxvwu24nnza.jpg');
+        background-image: url('https://wallpapers.com/images/hd/sakura-anime-wallpaper-w6smtqhs3kyf7wx1.jpg');
     }
 
     .login{
         display: flex;
+        flex-direction: initial;
         align-items: center;
         justify-content: space-between;
         width: 900px;
@@ -450,7 +467,7 @@ body {
         align-items: center;
         justify-content: space-between;
         width: 45%;
-        height: 100%;
+        height: 440px;
         background: #ffffff50;
         border-radius: 20px 0px 0px 20px;
     }
@@ -478,6 +495,7 @@ body {
         text-align: center;
         margin: 0px;
         gap: 0px;
+        font-size: 2.5rem;
     }
 
     .content-welcome h2{
@@ -501,7 +519,8 @@ body {
     
     .welcome button:hover{
         transform: scale(1.02);
-        background: #ffffffc9;
+        background: var(--primary-color);
+        color: #fff;
     }
 
     .links-social-welcome{

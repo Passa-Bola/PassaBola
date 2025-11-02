@@ -17,9 +17,9 @@ function Login() {
           </div>
           <button>Criar conta</button>
           <div className='links-social-welcome'>
-            <a href="#" target="_blank" rel="noopener noreferrer"><i className='fa-brands fa-youtube'></i></a>
-            <a href="#" target="_blank" rel="noopener noreferrer"><i className='fa-brands fa-instagram'></i></a>
-            <a href="#" target="_blank" rel="noopener noreferrer"><i className='fa-brands fa-facebook'></i></a>
+            <a href="https://www.youtube.com/@passabola" target="_blank" rel="noopener noreferrer"><i className='fa-brands fa-youtube'></i></a>
+            <a href="https://www.instagram.com/passaabola/" target="_blank" rel="noopener noreferrer"><i className='fa-brands fa-instagram'></i></a>
+            <a href="https://www.facebook.com/oficialpassaabola/" target="_blank" rel="noopener noreferrer"><i className='fa-brands fa-facebook'></i></a>
           </div>
         </section>
         <Authentication />
