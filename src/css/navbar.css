@@ -16,7 +16,6 @@ nav ul {
 
 nav ul li {
     display: flex;
-    justify-content: space-between;
 }
 
 nav ul li .active {
@@ -95,15 +94,6 @@ nav ul li a img {
     nav ul li a h1 {
         display: flex;
         font-size: 1rem;
-    }
-
-    nav ul li a h2 {
-        display: flex;
-        width: 100%;
-        justify-content: end;
-        font-size: 0.8rem;
-        padding: 5px 10px;
-        color: var(--primary-color);
     }
 
     nav ul li a:hover {

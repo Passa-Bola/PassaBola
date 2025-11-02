@@ -14,8 +14,8 @@ function Home() {
       <div className="content">
         <Search />
         <NewsFeed />
-        <NavBar />
       </div>
+        <NavBar />
     </section>
   )
 }

@@ -4,6 +4,7 @@ import { useEffect, useState } from 'react';
 function NewsFeed() {
     const [featured, setFeatured] = useState(null);
     const [news, setNews] = useState([]);
+    const [news2, setNews2] = useState([])
 
     useEffect(() => {
         async function fetchNews() {
@@ -13,7 +14,8 @@ function NewsFeed() {
 
                 if (data.length > 0) {
                     setFeatured(data[1]);
-                    setNews(data.slice(1, 20));
+                    setNews(data.slice(2, 20));
+                    setNews2(data.slice(21, 41))
                 }
             } catch (err) {
                 console.error('Erro ao buscar notícias:', err);
@@ -59,20 +61,23 @@ function NewsFeed() {
                             </article>
                         ))}
                     </div>
-                    <div className="ctn-news-col">
-                        {news.map((article, index) => (
-                            <article className='news-col' key={index}>
-                                <img src={article.imageUrl} alt={article.title} />
-                                <div className="info-news-col">
-                                    <h1>{article.title}</h1>
-                                    <div className="date-card">
-                                        <p>{new Date(article.publishedAt).toLocaleDateString()}</p>
-                                    </div>
-                                </div>
-                            </article>
-                        ))}
-                    </div>
                 </>
+            )}
+
+            {news2.length > 0 && (
+                <div className="ctn-news-col">
+                    {news2.map((article, index) => (
+                        <article className='news-col' key={index}>
+                            <img src={article.imageUrl} alt={article.title} />
+                            <div className="info-news-col">
+                                <h1>{article.title}</h1>
+                                <div className="date-card">
+                                    <p>{new Date(article.publishedAt).toLocaleDateString()}</p>
+                                </div>
+                            </div>
+                        </article>
+                    ))}
+                </div>
             )}
         </section>
     );
