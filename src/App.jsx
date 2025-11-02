@@ -1,4 +1,4 @@
-import { Routes, Route } from 'react-router-dom';
+import {BrowserRouter, Routes, Route } from 'react-router-dom';
 
 import './css/style.css';
 
@@ -16,7 +16,7 @@ function App() {
   ChangeIcon();
 
   return (
-    <>
+    <BrowserRouter>
       <Routes>
         <Route path="/" element={<Login />} />
         <Route path="/Home" element={<HomePage />} />
@@ -26,7 +26,7 @@ function App() {
         <Route path="/Profile" element={<ProfilePage />} />
         <Route path="/Notifications" element={<Notifications />} />
       </Routes>
-    </>
+    </BrowserRouter>
   )
 }
 

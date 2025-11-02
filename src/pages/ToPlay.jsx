@@ -10,7 +10,6 @@ function ToPlay() {
     <section className='ctn-toplay'>
       <Header />
       <div className="content">
-        <Ad />
         <Maps />
         <Play />
       </div>

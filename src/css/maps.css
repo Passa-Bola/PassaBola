@@ -10,6 +10,9 @@
 }
 
 .map iframe{
+    display: flex;
+    width: 100%;
     margin-top: 15px;
+    border-radius: 10px;
 }
 

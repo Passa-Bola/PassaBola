@@ -21,7 +21,7 @@ function PassaBola() {
           </h2>
         </section>
         <section className='channels'>
-          <h1>Nosso Canais</h1>
+          <h1>Nossos Canais</h1>
           <article className='ctn-info-channel'>
             <h1><i className="fa-brands fa-youtube"></i> You<span>Tube</span></h1>
             <div className="channel">

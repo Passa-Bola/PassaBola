@@ -1,4 +1,4 @@
-header{
+header {
     position: fixed;
     display: flex;
     width: 100%;
@@ -6,7 +6,7 @@ header{
     z-index: 50;
 }
 
-.header{
+.header {
     display: flex;
     align-items: center;
     width: 100%;
@@ -18,37 +18,98 @@ header{
     box-shadow: 0px 0px 20px 2px #000000af;
 }
 
-.profile{
+.profile {
     display: flex;
     align-items: center;
 }
 
-.profile img{
+.profile img {
     display: flex;
     width: 40px;
     border-radius: 50%;
 }
 
-.logo-header h1{
-    font-size: 1.3rem;
+.btn-conf-header button {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 1.2rem;
+    color: #fff;
+    background: transparent;
+    border: none;
+}
+
+.ctn-conf-header {
+    position: absolute;
+    display: flex;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    backdrop-filter: blur(1px);
+}
+
+.conf-header {
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    top: 60px;
+    right: 15px;
+    gap: 2px;
+    background: #000;
+    border: 1px solid #ffffff30;
+    border-radius: 10px;
+    padding: 5px;
+}
+
+.conf-header a {
+    display: flex;
+    padding: 5px 10px;
+    border-radius: 5px;
+    font-size: 1rem;
+    color: #fff;
+    gap: 3px;
+}
+
+.conf-header a:last-child {
+    color: #ef4444;
+}
+
+.conf-header a:active {
+    background: #252525;
 }
 
 /* resposividade */
 @media(width > 780px) {
 
-    header{
+    header {
         left: 15px;
         width: 205px;
         display: flex;
     }
 
-    .header{
+    .header {
         background: transparent;
         backdrop-filter: blur(0);
         border: none;
     }
 
-    .logo-header{
+    .logo-header {
         display: none;
+    }
+
+    .conf-header {
+        top: 60px;
+        right: unset;
+        left: 20px;
+        gap: 2px;
+        background: #000;
+        border: 1px solid #ffffff30;
+        border-radius: 10px;
+        padding: 5px;
+    }
+
+    .conf-header a:hover {
+        background: #252525;
     }
 }
