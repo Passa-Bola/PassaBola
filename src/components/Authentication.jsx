@@ -1,5 +1,5 @@
 import "../css/authentication.css";
-import { useState } from "react";
+import { useState, useEffect } from "react";
 import { useNavigate } from "react-router-dom";
 
 function Authentication() {
@@ -8,7 +8,33 @@ function Authentication() {
   const [remember, setRemember] = useState(false);
   const [error, setError] = useState("");
   const [showPassword, setShowPassword] = useState(false);
+  const [showBypassButton, setShowBypassButton] = useState(false);
   const navigate = useNavigate();
+
+  // Verificar se o bypass está habilitado (variável de ambiente)
+  useEffect(() => {
+    const bypassEnabled = import.meta.env.VITE_BYPASS_AUTH === 'true';
+    setShowBypassButton(bypassEnabled);
+  }, []);
+
+  // Função para fazer bypass de autenticação
+  const handleBypassLogin = () => {
+    const mockUser = {
+      id: 1,
+      username: "teste",
+      email: "teste@passabola.com",
+      name: "Usuário Teste",
+      role: "user"
+    };
+    const mockToken = "mock_token_" + Date.now();
+
+    // Armazenar no localStorage
+    localStorage.setItem("authToken", mockToken);
+    localStorage.setItem("user", JSON.stringify(mockUser));
+
+    // Navegar para home
+    navigate("/home");
+  };
 
   const handleLogin = async (e) => {
     e.preventDefault();
@@ -95,6 +121,25 @@ function Authentication() {
         {error && <p className="error-authentication">{error}</p>}
 
         <button type="submit">Entrar</button>
+        {showBypassButton && (
+          <button
+            type="button"
+            onClick={handleBypassLogin}
+            style={{
+              marginTop: "10px",
+              backgroundColor: "#ff9800",
+              color: "white",
+              padding: "10px 20px",
+              border: "none",
+              borderRadius: "5px",
+              cursor: "pointer",
+              fontSize: "14px",
+              fontWeight: "bold"
+            }}
+          >
+            🧪 Bypass (Dev)
+          </button>
+        )}
         <p>Não tem conta?<a> Criar!</a></p>
       </form>
     </section>

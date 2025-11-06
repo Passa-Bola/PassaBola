@@ -1,0 +1,105 @@
+.dashboard-modal-overlay{
+  position: fixed;
+  inset: 0;
+  display: block;
+  background: rgba(0,0,0,0.32);
+  z-index: 9999;
+  /* overlay must capture pointer events so we can detect clicks outside the modal */
+  pointer-events: auto;
+  cursor: default;
+}
+
+.dashboard-modal{
+  position: fixed;
+  border-radius: 12px;
+  background: #fff;
+  box-shadow: 0 10px 30px rgba(0,0,0,0.18);
+  overflow: hidden;
+  /* make sure the modal itself still receives pointer events */
+  pointer-events: auto;
+  /* start hidden for animation */
+  opacity: 0;
+  transform: translateY(-6px) scale(0.98);
+  transition: transform 200ms ease, opacity 200ms ease;
+}
+
+/* make the entire modal show a drag cursor */
+.dashboard-modal{
+  cursor: grab;
+}
+.dashboard-modal:active{
+  cursor: grabbing;
+}
+
+.dashboard-modal-header{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 8px 12px;
+  background: transparent;
+  cursor: grab;
+  user-select: none;
+  border-bottom: 1px solid #efefef;
+}
+
+.dashboard-modal-header:active{
+  cursor: grabbing;
+}
+
+.dashboard-modal-close{
+  background: transparent;
+  border: none;
+  font-size: 16px;
+  line-height: 1;
+  cursor: pointer;
+}
+
+.dashboard-modal-body{
+  flex: 1;
+  min-height: 120px;
+  background: #fff; /* explicitly white */
+}
+
+/* enter/exit states */
+.dashboard-modal.enter{
+  opacity: 1;
+  transform: translateY(0) scale(1);
+}
+.dashboard-modal.exit{
+  opacity: 0;
+  transform: translateY(-8px) scale(0.96);
+}
+
+.dashboard-modal-overlay.overlay-enter{
+  background: rgba(0,0,0,0.32);
+  transition: background 200ms ease;
+}
+.dashboard-modal-overlay.overlay-exit{
+  background: rgba(0,0,0,0);
+  transition: background 200ms ease;
+}
+
+/* mobile / bottom-sheet styling */
+.dashboard-modal.mobile{
+  /* positioning is handled inline so we avoid !important conflicts */
+  top: auto;
+  width: auto;
+  border-radius: 12px 12px 8px 8px;
+  transform: translateY(100%);
+  transition: transform 200ms ease, opacity 200ms ease;
+}
+
+.dashboard-modal.mobile.enter{
+  opacity: 1;
+}
+
+.dashboard-modal.mobile.exit{
+  opacity: 0;
+}
+
+.dashboard-modal.mobile .dashboard-modal-body{
+  /* keep body scrollable but limit max height so sheet isn't too tall */
+  max-height: 55vh;
+  overflow: auto;
+  -webkit-overflow-scrolling: touch;
+}

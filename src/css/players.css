@@ -72,3 +72,20 @@
     display: flex;
     font-size: 0.9rem;
 }
+
+/* Player action buttons */
+.player-actions{
+    display:flex;
+    align-items:center;
+    gap:8px;
+}
+.btn-chart{
+    background:transparent;
+    border:none;
+    padding:8px 10px;
+    border-radius:6px;
+    cursor:pointer;
+   
+}
+.btn-chart i{ color:#fff; 
+margin-right: 5px; }
