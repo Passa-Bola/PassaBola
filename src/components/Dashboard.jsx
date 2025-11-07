@@ -228,6 +228,7 @@ export default function DashboardModal({ onClose }) {
           <KicksDashboard 
             backendUrl={import.meta.env.VITE_BACKEND_URL || 'http://localhost:3000'}
             refreshInterval={5000}
+            renderLink={"https://passabola-dashboard.onrender.com"}
           />
         </div>
       </div>
